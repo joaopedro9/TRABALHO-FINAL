@@ -47,7 +47,7 @@ void *subtracao (void *arg){
 
 void MenuDeOperacoes (){
   printf ("\t\t\t\t+=========================================+\n");
-  printf ("\t\t\t\t|            Escolha a operacao:          |     \n");
+  printf ("\t\t\t\t|            Escolha a operacão:          |     \n");
   printf ("\t\t\t\t+-----------------------------------------+\n");
   printf ("\t\t\t\t|  1. Potenciacao  |   2. Multiplicacao   |\n");
   printf ("\t\t\t\t+-----------------------------------------+\n");
@@ -66,7 +66,7 @@ int main (){
     scanf_result = scanf ("%d", &escolha);
 
     if (scanf_result != 1 || escolha < 0 || escolha > 5){
-      printf ("Escolha invalida. Tente novamente.\n");
+      printf ("Escolha inválida. Tente novamente.\n");
       while (getchar () != '\n');
       continue;
     }
@@ -79,7 +79,7 @@ int main (){
       printf ("Digite o primeiro operando: ");
       scanf_result = scanf ("%d", &op.operando1);
       if (scanf_result != 1){
-        printf ("Entrada invalida. Tente novamente.\n");
+        printf ("Entrada inválida. Tente novamente.\n");
         while (getchar () != '\n');
         continue;
       }
@@ -90,7 +90,7 @@ int main (){
       scanf_result = scanf ("%d", &op.operando2);
 
       if (scanf_result != 1){
-        printf ("Entrada invalida. Tente novamente.\n");
+        printf ("Entrada inválida. Tente novamente.\n");
         while (getchar () != '\n');
         continue;
       }
