@@ -66,7 +66,7 @@ int main (){
     scanf_result = scanf ("%d", &escolha);
 
     if (scanf_result != 1 || escolha < 0 || escolha > 5){
-      printf ("Escolha invC!lida. Tente novamente.\n");
+      printf ("Escolha invalida. Tente novamente.\n");
       while (getchar () != '\n');
       continue;
     }
@@ -79,7 +79,7 @@ int main (){
       printf ("Digite o primeiro operando: ");
       scanf_result = scanf ("%d", &op.operando1);
       if (scanf_result != 1){
-        printf ("Entrada invC!lida. Tente novamente.\n");
+        printf ("Entrada invalida. Tente novamente.\n");
         while (getchar () != '\n');
         continue;
       }
@@ -90,8 +90,8 @@ int main (){
       scanf_result = scanf ("%d", &op.operando2);
 
       if (scanf_result != 1){
-        printf ("Entrada invC!lida. Tente novamente.\n");
-        while (getchar () != '\n');	// Limpa o buffer do teclado
+        printf ("Entrada invalida. Tente novamente.\n");
+        while (getchar () != '\n');
         continue;
       }
       break;
