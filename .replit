@@ -1,0 +1,18 @@
+run = "gcc QUESTAO-04/QUESTAO-04.c -o main -pthread && ./main"
+
+[nix]
+channel = "stable-22_11"
+
+[git]
+script = "https://github.com/joaopedro9/TRABALHO-FINAL"
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix", "CALCULADORA.c","QUESTAO-04.c"]
+
+[languages]
+
+[languages.c]
+pattern = "**/*.{c,h}"
+
+[languages.c.languageServer]
+start = "ccls"
