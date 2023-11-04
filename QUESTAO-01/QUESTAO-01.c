@@ -13,15 +13,11 @@ void loop(){
   	percentual = map(valor,0,1023,0,100);
   if (percentual<40){
   	digitalWrite(ledpin,1);
-    //delay(100);
-  	//digitalWrite(ledpin,0);
-    //delay(100);
 
   }else{
     digitalWrite(ledpin,0);}
-  //Serial.println(valor);
-  Serial.print("Porcentagem de Luz na sala: ");
-  Serial.print(percentual);
-  Serial.println("%");
-  delay(500);
+    Serial.print("Porcentagem de Luz na sala: ");
+    Serial.print(percentual);
+    Serial.println("%");
+    delay(500);
 }
